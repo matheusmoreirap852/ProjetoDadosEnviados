@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WEAAHYAVP7HwCExmsLpk7GJL+LGXF6o0ifOgygC9kzDhIlQXcylkPbt5hG4jq/DBqYpFFcZU4W7hLw6VWBVfeg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gota8\\source\\repos\\Empreendimento\\Empreendimento\\Empreendimento.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gota8\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}

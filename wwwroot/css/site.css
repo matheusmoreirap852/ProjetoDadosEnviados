@@ -1,0 +1,699 @@
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave a todas as âncoras */
+    scroll-behavior: smooth; /* Para compatibilidade com navegadores mais antigos */
+}
+
+/* Define a velocidade da transição de rolagem */
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    transition-duration: 1s; /* Ajuste o valor para controlar a velocidade da transição */
+}
+
+.header-inicio {
+    color: #050A30;
+}
+
+
+.section-1 {
+    padding-top: 80px;
+}
+
+
+.section-2 {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-quemSomos {
+    text-align: left;
+    color: #050A30;
+}
+
+.text-quemSomos {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+    .text-quemSomos strong {
+        font-weight: bold;
+    }
+
+    .text-quemSomos a {
+        color: #0066cc;
+        text-decoration: none;
+        border-bottom: 1px solid #0066cc;
+        transition: border-bottom 0.3s ease;
+    }
+
+        .text-quemSomos a:hover {
+            border-bottom: 2px solid #0066cc;
+        }
+
+
+/* Estilo para o botão "Voltar ao Topo" */
+#btnVoltarAoTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #050A30;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.d-column {
+    display: flex;
+    flex-direction: column;
+}
+
+    .d-column span {
+        /* Estilos para todos os spans dentro do contêiner d-column */
+        font-weight: normal; /* Exemplo de estilo comum para todos os spans */
+    }
+
+    .d-column .thin-span {
+        /* Estilos específicos para o span mais fino */
+        font-weight: bold;
+        color: #050A30;
+        text-transform: uppercase;
+        /* Adicione outros estilos conforme necessário */
+    }
+
+
+/* Estilize seus links <a> com a fonte personalizada */
+a {
+    color: #183762;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* CSS personalizado para a imagem no carrossel */
+.imagem-menor {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .section-3 img {
+        width: auto;
+        height: auto;
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+        margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+    }
+
+
+
+/* ESTILO FORMATADOS  */
+.elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elementor-column {
+    flex: 1;
+    margin: 15px;
+    max-width: calc(33.33% - 30px);
+    box-sizing: border-box;
+}
+
+.elementskit-info-image-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.elementskit-box-header img {
+    max-width: 100%;
+}
+
+.elementskit-info-box-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.elementskit-box-style-content {
+    margin-top: 15px;
+}
+
+.elementor-button-wrapper {
+    margin-top: 15px;
+}
+
+/* Estilo para as imagens nas caixas de imagem */
+.elementskit-info-image-box img {
+    border-radius: 10px; /* Adicione a quantidade desejada de borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra opcional */
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura da caixa */
+    height: auto; /* Garante que a altura da imagem seja ajustada automaticamente */
+}
+
+/* Estilo para as bordas das caixas de imagem */
+.elementskit-info-image-box {
+    border: 1px solid #ccc; /* Adicione a cor e largura da borda desejadas */
+    border-radius: 10px; /* Adicione a quantidade desejada de borda arredondada */
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada corretamente */
+}
+
+/* Estilo para o botão de contato */
+.elementskit-box-body a {
+    background-color: #050A30;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* ESTILO FORMATADOS  */
+
+
+
+
+
+/* CSS personalizado para destacar o texto no carrossel */
+.destaque-texto {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+    .destaque-texto h3 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .destaque-texto p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+/* Estilo para a nova seção */
+.custom-section {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+    .custom-section:hover {
+        background-color: #555;
+    }
+
+/* Estilo para o texto estilizado */
+.styled-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.bg-dark-fundo {
+    background-color: #050A30;
+}
+
+/* Estilize os submenus para que eles fiquem ocultos por padrão */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #DEE4F0;
+    color: #183762;
+    padding: 10px;
+    margin-top: 30px;
+    transition: color 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+    .submenu li {
+        display: block;
+    }
+
+        .submenu li a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+.mt-190 {
+    margin-top: 190px;
+}
+
+.fixed-top {
+    background-color: #DEE4F0;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+    /* Efeito hover para os links da barra de navegação */
+    .navbar-nav .nav-link:hover {
+        color: #5ea4ee; /* Cor do texto ao passar o mouse (azul) */
+    }
+
+/* Estilize o item "Perfil da Empresa" para que ele seja uma posição relativa */
+.nav-item:hover .submenu,
+.nav-item.active .submenu {
+    display: block;
+}
+
+.footer .color-black {
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #fff; /* Cor de fundo do rodapé (pode ser personalizada) */
+    color: #333; /* Cor do texto do rodapé (pode ser personalizada) */
+    padding: 30px 0; /* Espaçamento interno superior e inferior */
+}
+
+    .footer h3 {
+        color: #333; /* Cor do título do rodapé (pode ser personalizada) */
+    }
+
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+            .footer ul li a {
+                color: #333; /* Cor dos links no rodapé (pode ser personalizada) */
+                text-decoration: none;
+            }
+
+                .footer ul li a:hover {
+                    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse sobre os links */
+                }
+
+/* Estilo para as seções com imagem à esquerda */
+.container-left-image {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 40px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+    .container-left-image img {
+        max-width: 100%; /* Imagem responsiva */
+    }
+
+/* Estilo para as seções com imagem à direita */
+.container-right-image {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 40px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+    .container-right-image img {
+        max-width: 100%; /* Imagem responsiva */
+    }
+
+/* Estilo personalizado para a seção de valores */
+.values-section {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Estilo para o título */
+.values-title {
+    font-family: Arial, sans-serif; /* Fonte do título */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+
+
+/* Estilo para telas de tamanho médio (tablets, por exemplo) */
+@media (max-width: 768px) {
+    #bannerCarousel {
+        height: 250px; /* Altura menor para tablets */
+    }
+
+    .elementor-column {
+        max-width: 100%;
+    }
+
+    .mt-190 {
+        margin-top: 300px;
+    }
+
+    .section-1 {
+        padding-top: 200px;
+    }
+}
+/* Estilos para a seção de fundo branco */
+.atividades-section {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #333; /* Cor do texto */
+}
+
+    /* Estilos para o título "Nossas Atividades" */
+    .atividades-section h2 {
+        font-size: 36px; /* Tamanho da fonte para o título */
+        color: #333; /* Cor do título */
+        text-align: center; /* Centralizar o título */
+        margin-bottom: 30px; /* Espaçamento inferior para o título */
+    }
+
+    /* Estilos para a lista de atividades */
+    .atividades-section ul {
+        list-style-type: none; /* Remover marcadores da lista */
+        padding-left: 0; /* Remover o recuo padrão da lista */
+    }
+
+        /* Estilos para os itens da lista */
+        .atividades-section ul li {
+            margin-bottom: 30px; /* Espaçamento inferior para cada item da lista */
+            padding: 20px; /* Espaçamento interno para cada item */
+            border-radius: 8px; /* Borda arredondada para os blocos */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para os blocos */
+            background-color: #fff; /* Cor de fundo dos blocos */
+        }
+
+            /* Estilos para os títulos de cada bloco */
+            .atividades-section ul li strong {
+                display: block;
+                font-size: 24px; /* Tamanho da fonte para os títulos */
+                margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+            }
+
+            /* Cor preta para o texto dentro dos blocos de fundo branco */
+            .atividades-section ul li p {
+                color: #000;
+            }
+
+strong {
+    color: #333;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Adicione uma borda ofuscada */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra suave */
+    transition: all 0.3s ease-in-out; /* Adicione uma transição suave */
+}
+
+    /* Efeito hover para destacar a imagem */
+    .img-fluid:hover {
+        transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+    }
+
+.propósito-section {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    .propósito-section h2 {
+        font-size: 36px; /* Tamanho da fonte para o título */
+        color: #333; /* Cor do título */
+    }
+
+    .propósito-section p {
+        font-size: 18px; /* Tamanho da fonte para o texto */
+        line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+        color: #666; /* Cor do texto */
+    }
+
+.title-itemValores {
+    border-bottom: 5px solid #9a9a1e;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.value-card {
+    height: 300px; /* Defina a altura desejada em pixels */
+}
+
+    .value-card h3 {
+        height: 50px; /* Altura do h3 dentro do value-card */
+    }
+
+    .value-card p {
+        height: 150px; /* Altura do p dentro do value-card */
+    }
+
+
+
+/* Estilo para os valores */
+.values-list {
+    list-style: none; /* Remova os bullets da lista */
+    padding: 0; /* Remova o espaçamento interno da lista */
+}
+
+#bannerCarousel {
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Cor do texto (pode precisar ser ajustada dependendo da imagem de fundo) */
+}
+
+.titule-banner-1, .titule-banner-2, .titule-banner-3, .titule-banner-4 {
+    color: #333; /* Cor do texto dentro da seção */
+}
+
+/* Restante do seu estilo permanece inalterado */
+.titule-banner-1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titule-banner-2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titule-banner-3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.titule-banner-4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.carousel {
+    padding: 20px;
+    height: 270px;
+    background-image: url('/imagem/img1.jpg'); /* Substitua pelo caminho real da sua imagem */
+}
+
+
+
+.carousel-inner {
+    height: 80%;
+}
+
+    .carousel-inner img {
+        height: 80%;
+        width: 90%;
+        object-fit: cover;
+    }
+/* Estilo para cada item da lista */
+.values-list-item {
+    font-family: Georgia, serif; /* Fonte para os valores */
+    font-size: 18px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+}
+
+/* Estilo para a imagem redonda */
+.rounded-image {
+    border-radius: 50%; /* Forma redonda */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    margin: 0 auto 20px; /* Centralizar e adicionar margem inferior */
+    display: block; /* Para centralizar horizontalmente */
+}
+
+/* Estilo para a nova seção */
+.custom-section {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do conteúdo ao centro */
+    transition: background-color 0.3s ease; /* Efeito de transição suave para a cor de fundo */
+}
+
+    /* Efeito de hover para a seção */
+    .custom-section:hover {
+        background-color: #555; /* Cor de fundo alterada ao passar o mouse */
+    }
+
+/* Estilo para o texto estilizado */
+.styled-text {
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para as seções que se movem */
+.scrollable-section {
+    transition: transform 0.3s ease; /* Transição suave para o movimento */
+}
+
+    /* Aplicar um deslocamento vertical positivo para mover a seção para baixo */
+    .scrollable-section.move-down {
+        transform: translateY(100px); /* Ajuste o valor conforme necessário para a quantidade desejada de deslocamento */
+    }
+
+    /* Aplicar um deslocamento vertical negativo para mover a seção para cima */
+    .scrollable-section.move-up {
+        transform: translateY(-100px); /* Ajuste o valor conforme necessário para a quantidade desejada de deslocamento */
+    }
+
+
+
+
+/* Estilo para a seção */
+.section-6 {
+    background-color: #567666; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do conteúdo ao centro */
+}
+
+    /* Estilo para o título */
+    .section-6 h2 {
+        font-size: 24px; /* Tamanho do título */
+        margin-bottom: 20px; /* Espaçamento inferior do título */
+    }
+
+    /* Estilo para o texto */
+    .section-6 p {
+        font-size: 18px; /* Tamanho do texto */
+        line-height: 1.5; /* Espaçamento entre linhas */
+        margin-bottom: 20px; /* Espaçamento inferior do texto */
+    }
+
+
+
+
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .col-md-6 img,
+    .col-md-6 h3,
+    .col-md-6 p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+
+.social-bar {
+    background-color: #050A30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+    .social-bar a {
+        font-size: 26px;
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.2); /* Adicione uma borda ofuscada */
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra suave */
+        transition: all 0.3s ease-in-out; /* Adicione uma transição suave */
+    }
+
+        /* Efeito hover para destacar a imagem */
+        .social-bar a:hover {
+            transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+        }
+
+/* Add your inline CSS styles here */
+#section-10 {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contato-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .contato-list li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}
