@@ -2,32 +2,32 @@
 {
     public class DadosPsFisica
     {
-        public string NomeCompleto { get; set; }
-        public string CPF { get; set; }
-        public string RG { get; set; }
-        public string OrgaoExpeditor { get; set; }
-        public string DataNascimento { get; set; }
-        public string EstadoCivil { get; set; }
-        public string NomeConjuge { get; set; }
-        public string DataNascimentoConjuge { get; set; }
-        public string Email { get; set; }
-        public string TelefoneComercial { get; set; }
-        public string TelefoneCelular { get; set; }
-        public string EnderecoResidencial { get; set; }
-        public string Numero { get; set; }
-        public string Bairro { get; set; }
-        public string Cidade { get; set; }
-        public string UF { get; set; }
-        public string CEP { get; set; }
-        public string Empresa { get; set; }
-        public string Profissao { get; set; }
-        public string DataAdmissao { get; set; }
-        public decimal RendaLiquida { get; set; }
-        public string Banco { get; set; }
-        public string Operacao { get; set; }
-        public string Agencia { get; set; }
-        public string Conta { get; set; }
-        public decimal ValorCredito { get; set; }
-        public string Vendedor { get; set; }
+        public string txtNomeCompleto { get; set; }
+        public string txtCPF { get; set; }
+        public string txtRG { get; set; }
+        public string txtOrgaoExp { get; set; }
+        public string txtDataNascimento { get; set; }
+        public string txtEstadoCivil { get; set; }
+        public string txtNomeConjuge { get; set; }
+        public string txtDataNascimentoConjuge { get; set; }
+        public string txtEmail { get; set; }
+        public string txtTelefoneComercial { get; set; }
+        public string txtTelefoneCelular { get; set; }
+        public string txtEnderecoResidencial { get; set; }
+        public string txtNumero { get; set; }
+        public string txtBairro { get; set; }
+        public string txtCidade { get; set; }
+        public string txtUF { get; set; }
+        public string txtCEP { get; set; }
+        public string txtEmpresa { get; set; }
+        public string txtProfissao { get; set; }
+        public string txtDataAdmissao { get; set; }
+        public decimal txtRendaLiquida { get; set; }
+        public string txtBanco { get; set; }
+        public string txtOperacao { get; set; }
+        public string txtAgencia { get; set; }
+        public string txtConta { get; set; }
+        public decimal txtValorCredito { get; set; }
+        public string txtVendedor { get; set; }
     }
 }
