@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WEAAHYAVP7HwCExmsLpk7GJL+LGXF6o0ifOgygC9kzDhIlQXcylkPbt5hG4jq/DBqYpFFcZU4W7hLw6VWBVfeg==",
+  "dgSpecHash": "fjuFInqBzhIZqkv3MBdREaRD/W4NY8Mv6y5RegroYSBie9TOzpKXaHA497lhssz8ISjV2jed2F/yXytJEJiBGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gota8\\source\\repos\\Empreendimento\\Empreendimento\\Empreendimento.csproj",
+  "projectFilePath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gota8\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+    "C:\\Users\\matheus.moreira\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
   ],
   "logs": []
 }
