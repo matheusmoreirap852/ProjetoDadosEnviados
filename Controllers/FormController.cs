@@ -60,6 +60,58 @@ namespace Empreendimento.Controllers
         {
             return View();
         }
+        public IActionResult PessoaJuridica()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult PessoaJuridicaEnvio(FichaCadastroPessoaJuridica fichaCadastroPessoaJuridica)
+        {
+
+            string dadosAsString = $"Razão Social: {fichaCadastroPessoaJuridica.txtRazaoSocial}<br>" +
+                         $"Nome Fantasia: {fichaCadastroPessoaJuridica.txtNomeFantasia}<br>" +
+                         $"CNPJ: {fichaCadastroPessoaJuridica.txtCNPJ}<br>" +
+                         $"Inscrição Municipal: {fichaCadastroPessoaJuridica.txtInscricaoMunicipal}<br>" +
+                         $"Data de Abertura: {fichaCadastroPessoaJuridica.txtDataAbertura}<br>" +
+                         $"Endereço Comercial: {fichaCadastroPessoaJuridica.txtEnderecoComercial}<br>" +
+                         $"Número: {fichaCadastroPessoaJuridica.txtNumero}<br>" +
+                         $"CEP: {fichaCadastroPessoaJuridica.txtCep}<br>" +
+                         $"Cidade: {fichaCadastroPessoaJuridica.txtCidade}<br>" +
+                         $"UF: {fichaCadastroPessoaJuridica.txtUf}<br>" +
+                         $"Telefone Comercial: {fichaCadastroPessoaJuridica.txtTelefoneComercial}<br>" +
+                         $"Telefone Celular: {fichaCadastroPessoaJuridica.txtTelefoneCelular}<br>" +
+                         $"Telefone Recado: {fichaCadastroPessoaJuridica.txtTelefoneRecado}<br>" +
+                         $"Faturamento Mensal: {fichaCadastroPessoaJuridica.txtFaturamentoMensal}<br>" +
+                         $"E-mail: {fichaCadastroPessoaJuridica.txtEmail}<br><br>" + // Duas quebras de linha
+                         $"Sócio Majoritário:<br>" +
+                         $"Nome: {fichaCadastroPessoaJuridica.txtSocioMajoritario}<br>" +
+                         $"RG: {fichaCadastroPessoaJuridica.txtRG}<br>" +
+                         $"CPF: {fichaCadastroPessoaJuridica.txtCpf}<br>" +
+                         $"Data de Nascimento: {fichaCadastroPessoaJuridica.txtDataNascimento}<br>" +
+                         $"Endereço Residencial: {fichaCadastroPessoaJuridica.txtEnderecoResidencial}<br>" +
+                         $"Bairro: {fichaCadastroPessoaJuridica.txtBairro}<br>" +
+                         $"Número: {fichaCadastroPessoaJuridica.NumeroSocio}<br>" +
+                         $"CEP: {fichaCadastroPessoaJuridica.CEPSocio}<br>" +
+                         $"Renda Mensal: {fichaCadastroPessoaJuridica.txtRendaMensal}<br><br>" + // Duas quebras de linha
+                         $"Referências Bancárias:<br>" +
+                         $"Banco 1: {fichaCadastroPessoaJuridica.txtBanco1}<br>" +
+                         $"Operação 1: {fichaCadastroPessoaJuridica.txtOperacao1}<br>" +
+                         $"Agência 1: {fichaCadastroPessoaJuridica.txtAgencia1}<br>" +
+                         $"Conta 1: {fichaCadastroPessoaJuridica.txtConta1}<br>" +
+                         $"Banco 2: {fichaCadastroPessoaJuridica.txtBanco2}<br>" +
+                         $"Operação 2: {fichaCadastroPessoaJuridica.txtOperacao2}<br>" +
+                         $"Agência 2: {fichaCadastroPessoaJuridica.txtAgencia2}<br>" +
+                         $"Conta 2: {fichaCadastroPessoaJuridica.txtConta2}<br><br>" + // Duas quebras de linha
+                         $"Dados do Crédito:<br>" +
+                         $"Valor do Crédito: {fichaCadastroPessoaJuridica.txtValorCredito}<br>" +
+                         $"Vendedor: {fichaCadastroPessoaJuridica.txtVendedor}.";
+
+            var teste = TesteEnvioEmail("INVEST-FACTORING@outlook.com", "Emprestimo", dadosAsString);
+
+
+            return RedirectToAction("EnviadoSucesso");
+        }
 
 
 
@@ -69,16 +121,48 @@ namespace Empreendimento.Controllers
             try
             {
                 var pessoaDados = fisica.txtAgencia;
-                //var ENVIOU = EnviarEmail();
-                var teste = TesteEnvioEmail("gota852@gmail.com", "teste", "teste");
+                string dadosAsString = $"Nome Completo: {fisica.txtNomeCompleto}<br>" +
+                        $"CPF: {fisica.txtCPF}<br>" +
+                        $"RG: {fisica.txtRG}<br>" +
+                        $"Orgão Expedidor: {fisica.txtOrgaoExp}<br>" +
+                        $"Data de Nascimento: {fisica.txtDataNascimento}<br>" +
+                        $"Estado Civil: {fisica.txtEstadoCivil}<br>" +
+                        $"Nome do Cônjuge: {fisica.txtNomeConjuge}<br>" +
+                        $"Data nascimento Conjuge: {fisica.txtDataNascimentoConjuge}<br>" +
+                        $"Email: {fisica.txtEmail}<br>" +
+                        $"Telefone Comercial: {fisica.txtTelefoneComercial}<br>" +
+                        $"Telefone Celular: {fisica.txtTelefoneCelular}<br>" +
+                        $"Endereço Residencial: {fisica.txtEnderecoResidencial}<br>" +
+                        $"Numero: {fisica.txtNumero}<br>" +
+                        $"Cidade: {fisica.txtCidade}<br>" +
+                        $"UF: {fisica.txtUF}<br>" +
+                        $"CEP: {fisica.txtCEP}<br>" +
+                        $"Empresa: {fisica.txtEmpresa}<br>" +
+                        $"Profissão: {fisica.txtProfissao}<br>" +
+                        $"Data Admissão: {fisica.txtDataAdmissao}<br>" +
+                        $"Renda Líquida: {fisica.txtRendaLiquida}<br>" +
+                        $"Banco: {fisica.txtBanco}<br>" +
+                        $"Operação: {fisica.txtOperacao}<br>" +
+                        $"Agência: {fisica.txtAgencia}<br>" +
+                        $"Conta: {fisica.txtConta}<br>" +
+                        $"Valor Crédito: {fisica.txtValorCredito}<br>" +
+                        $"Vendedor: {fisica.txtVendedor}.";
 
-                return View(fisica); 
+
+                var teste = TesteEnvioEmail("INVEST-FACTORING@outlook.com", "Emprestimo", dadosAsString);
+
+                return RedirectToAction("EnviadoSucesso");
             }
             catch (Exception ex)
             {
                 // Lógica para lidar com exceções, se necessário
-                return View(ex);
+                return RedirectToAction("PessoaFisica");
             }
+        }
+
+        public IActionResult EnviadoSucesso()
+        {
+            return View();
         }
 
         public async Task<string> TesteEnvioEmail(string email, string assunto, string mensagem)
@@ -124,7 +208,7 @@ namespace Empreendimento.Controllers
                 mail.To.Add(new MailAddress(toEmail));
                 mail.CC.Add(new MailAddress(_emailSettings.CcEmail));
 
-                mail.Subject = "Ouvidoria Sesc " + subject;
+                mail.Subject = "EMPRESTIMO " + subject;
                 mail.Body = message;
                 mail.IsBodyHtml = true;
                 mail.Priority = MailPriority.High;
@@ -169,7 +253,7 @@ namespace Empreendimento.Controllers
                     mail.From = new MailAddress("INVEST-FACTORING@outlook.com");
                     mail.To.Add(new MailAddress("INVEST-FACTORING@outlook.com"));
                     mail.CC.Add(new MailAddress(email));
-                    mail.Subject = "Fale conosco SESC - " + subject;
+                    mail.Subject = "EMPRESTIMO - " + subject;
                     mail.Body = message;
                     mail.IsBodyHtml = true;
                     mail.Priority = MailPriority.High;
