@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus.moreira\\Source\\Repos\\ProjetoDadosEnviados\\Empreendimento.csproj": {}
+    "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus.moreira\\Source\\Repos\\ProjetoDadosEnviados\\Empreendimento.csproj": {
+    "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus.moreira\\Source\\Repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
         "projectName": "Empreendimento",
-        "projectPath": "C:\\Users\\matheus.moreira\\Source\\Repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
+        "projectPath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
         "packagesPath": "C:\\Users\\matheus.moreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus.moreira\\Source\\Repos\\ProjetoDadosEnviados\\obj\\",
+        "outputPath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

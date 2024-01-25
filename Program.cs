@@ -18,9 +18,10 @@ var configuration = new ConfigurationBuilder()
     .AddEnvironmentVariables()
     .Build();
 
-// Configure EmailSettings from appsettings.json
-var emailSettings = configuration.GetSection("EmailSettings").Get<EmailSettings>();
+
+var emailSettings = new EmailSettings();
 builder.Configuration.Bind("EmailSettings", emailSettings);
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

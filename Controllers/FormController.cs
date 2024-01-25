@@ -9,10 +9,51 @@ namespace Empreendimento.Controllers
 {
     public class FormController : Controller
     {
-        private EmailSettings _emailSettings;
+        private readonly EmailSettings _emailSettings;
 
-        public FormController(IOptions<EmailSettings> emailSettings) {
-            _emailSettings = emailSettings.Value; 
+        public FormController(IOptions<EmailSettings> emailSettings)
+        {
+            _emailSettings = emailSettings.Value;
+        }
+
+        public IActionResult EnviarEmail()
+        {
+            // Configuração do cliente SMTP
+            SmtpClient client = new SmtpClient("smtp.office365.com")
+            {
+                Port = int.Parse("smtp.office365.com"),
+                Credentials = new NetworkCredential("INVEST-FACTORING@outlook.com", "TESTE@123a"),
+                EnableSsl = true,
+            };
+
+            // Construir o e-mail
+            MailMessage mailMessage = new MailMessage
+            {
+                From = new MailAddress("INVEST-FACTORING@outlook.com"),
+                Subject = "Assunto do E-mail",
+                Body = "Corpo do E-mail",
+                IsBodyHtml = true,
+            };
+
+            // Adicionar destinatários
+            mailMessage.To.Add("INVEST-FACTORING@outlook.com");
+            if (!string.IsNullOrEmpty(_emailSettings.CcEmail))
+            {
+                mailMessage.CC.Add(_emailSettings.CcEmail);
+            }
+
+            try
+            {
+                // Enviar o e-mail
+                client.Send(mailMessage);
+                ViewBag.Message = "E-mail enviado com sucesso!";
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = $"Erro ao enviar o e-mail: {ex.Message}";
+            }
+
+            return View();
         }
 
         public IActionResult PessoaFisica()
@@ -28,6 +69,7 @@ namespace Empreendimento.Controllers
             try
             {
                 var pessoaDados = fisica.txtAgencia;
+                //var ENVIOU = EnviarEmail();
                 var teste = TesteEnvioEmail("gota852@gmail.com", "teste", "teste");
 
                 return View(fisica); 
@@ -72,11 +114,11 @@ namespace Empreendimento.Controllers
         {
             try
             {
-                string toEmail = string.IsNullOrEmpty(email) ? _emailSettings.ToEmail : email;
+                string toEmail = string.IsNullOrEmpty(email) ? "INVEST-FACTORING@outlook.com" : email;
 
                 MailMessage mail = new MailMessage()
                 {
-                    From = new MailAddress(_emailSettings.UsernameEmail, "E-mail")
+                    From = new MailAddress("INVEST-FACTORING@outlook.com", "E-mail")
                 };
 
                 mail.To.Add(new MailAddress(toEmail));
@@ -91,9 +133,9 @@ namespace Empreendimento.Controllers
                 //mail.Attachments.Add(new Attachment(arquivo));
                 //
 
-                using (SmtpClient smtp = new SmtpClient(_emailSettings.PrimaryDomain, _emailSettings.PrimaryPort))
+                using (SmtpClient smtp = new SmtpClient("smtp.office365.com", _emailSettings.PrimaryPort))
                 {
-                    //smtp.Credentials = new NetworkCredential(_emailSettings.UsernameEmail, _emailSettings.UsernamePassword);
+                    //smtp.Credentials = new NetworkCredential("INVEST-FACTORING@outlook.com", "TESTE@123a");
                     smtp.UseDefaultCredentials = false; // Use local IP, no credentials needed
                     smtp.EnableSsl = false; // Ativar o TLS
                     smtp.Timeout = 10000;
@@ -117,15 +159,15 @@ namespace Empreendimento.Controllers
                     string nomeArquivo = "";
                     if (email == null || email == "")
                     {
-                        email = _emailSettings.ToEmail;
+                        email = "INVEST-FACTORING@outlook.com";
                     }
 
                     MailMessage mail = new MailMessage();
                     // Obtem os anexos contidos em um arquivo arraylist e inclui na mensagem
                    
 
-                    mail.From = new MailAddress(_emailSettings.FromEmail);
-                    mail.To.Add(new MailAddress(_emailSettings.ToEmail));
+                    mail.From = new MailAddress("INVEST-FACTORING@outlook.com");
+                    mail.To.Add(new MailAddress("INVEST-FACTORING@outlook.com"));
                     mail.CC.Add(new MailAddress(email));
                     mail.Subject = "Fale conosco SESC - " + subject;
                     mail.Body = message;
@@ -136,9 +178,9 @@ namespace Empreendimento.Controllers
                     //mail.Attachments.Add(new Attachment(arquivo));
                     //
 
-                    using (SmtpClient smtp = new SmtpClient(_emailSettings.PrimaryDomain, _emailSettings.PrimaryPort))
+                    using (SmtpClient smtp = new SmtpClient("smtp.office365.com", _emailSettings.PrimaryPort))
                     {
-                        smtp.Credentials = new NetworkCredential(_emailSettings.UsernameEmail, _emailSettings.UsernamePassword);
+                        smtp.Credentials = new NetworkCredential("INVEST-FACTORING@outlook.com", "TESTE@123a");
                         smtp.EnableSsl = true;
                         await smtp.SendMailAsync(mail);
                     }
