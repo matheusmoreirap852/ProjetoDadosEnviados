@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vk1HqcYHWyUpwi2tGZeFAkvJVOg2oUe/8xfSS8i0hVsCM2KG+830Pyae+mwHGYMv+tUp1xm1yMh0rXFugmV+AA==",
+  "dgSpecHash": "fjuFInqBzhIZqkv3MBdREaRD/W4NY8Mv6y5RegroYSBie9TOzpKXaHA497lhssz8ISjV2jed2F/yXytJEJiBGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Sistema.csproj",
+  "projectFilePath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matheus.moreira\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
   ],

@@ -107,9 +107,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Sistema.csproj",
-      "projectName": "Sistema",
-      "projectPath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Sistema.csproj",
+      "projectUniqueName": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
+      "projectName": "Empreendimento",
+      "projectPath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\Empreendimento.csproj",
       "packagesPath": "C:\\Users\\matheus.moreira\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\obj\\",
       "projectStyle": "PackageReference",

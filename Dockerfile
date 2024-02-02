@@ -1,25 +1,24 @@
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER app
-WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
-
+# Use the official .NET SDK as the base image
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
+
+ENV TZ="America/Sao_Paulo"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Set the working directory
 WORKDIR /src
-COPY ["Empreendimento/Empreendimento.csproj", "Empreendimento/"]
-RUN dotnet restore "./Empreendimento/./Empreendimento.csproj"
-COPY . .
-WORKDIR "/src/Empreendimento"
-RUN dotnet build "./Empreendimento.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+COPY  . .
+
+RUN dotnet build "./Empreendimento.csproj" -c Release -o /app
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Empreendimento.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Empreendimento.csproj" -c Release -o /app
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=publish /app/publish .
+
+COPY --from=publish /app .
+
+EXPOSE 5000
+
 ENTRYPOINT ["dotnet", "Empreendimento.dll"]
