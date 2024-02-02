@@ -1,0 +1,7 @@
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\Sistema.exe
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\Sistema.dll
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\Sistema.deps.json
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\Sistema.runtimeconfig.json
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Release\net8.0\PubTmp\Out\Sistema.pdb

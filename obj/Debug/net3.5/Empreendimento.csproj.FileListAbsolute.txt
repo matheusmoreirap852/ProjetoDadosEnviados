@@ -1,0 +1,6 @@
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.csproj.AssemblyReference.cache
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.AssemblyInfoInputs.cache
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.AssemblyInfo.cs
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.csproj.CoreCompileInputs.cache
+C:\Users\matheus.moreira\source\repos\ProjetoDadosEnviados\obj\Debug\net3.5\Empreendimento.sourcelink.json

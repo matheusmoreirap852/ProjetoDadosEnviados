@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Empreendimento.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Empreendimento.bundle.scp.css"
+      "Id": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Sistema.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Sistema.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\matheus.moreira\\source\\repos\\ProjetoDadosEnviados\\wwwroot\\css\\site.css",
@@ -401,20 +401,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Empreendimento.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Sistema.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Empreendimento.props",
-      "PackagePath": "build\\Empreendimento.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Sistema.props",
+      "PackagePath": "build\\Sistema.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Empreendimento.props",
-      "PackagePath": "buildMultiTargeting\\Empreendimento.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Sistema.props",
+      "PackagePath": "buildMultiTargeting\\Sistema.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Empreendimento.props",
-      "PackagePath": "buildTransitive\\Empreendimento.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Sistema.props",
+      "PackagePath": "buildTransitive\\Sistema.props"
     }
   ],
   "ElementsToRemove": []
